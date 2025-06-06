@@ -16,15 +16,15 @@ main{
 }
 
 form {
+    margin: 30px 50px;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 20px;
     height: 500px;
     width: 500px;
     padding: 30px;
-    gap: 5px;
+    gap: 20px;
 }
 
 input{
@@ -34,10 +34,21 @@ input{
     box-shadow: 4px 4px yellowgreen;
     animation: 3s;
     color: gray;
-    width: 70%;
+    width: 90%;
 }
 
 label{
     color: black;
 
+}
+
+.btn{
+    color: white;
+    padding: 3px;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 3px 3px rgb(7, 7, 40);
+    background-color:yellowgreen ;
 }
