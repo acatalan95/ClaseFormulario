@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    height: 90vh;
+    background-color: #caf0f8;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%
+
+
+}
 
 form {
     background-color: aquamarine;
@@ -10,9 +21,10 @@ form {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
-    height: 300px;
-    width: 300px;
-    padding: 15px;
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    gap: 5px;
 }
 
 input{
@@ -21,4 +33,11 @@ input{
     border: none;
     box-shadow: 4px 4px yellowgreen;
     animation: 3s;
+    color: gray;
+    width: 70%;
+}
+
+label{
+    color: black;
+
 }
