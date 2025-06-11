@@ -19,14 +19,24 @@
             <label for="surname">Apellido</label>
             <input id="surname" type="text" name="apellido">
             <br>
+            <label for="profesion">Profesion</label>
+            <input id="profesion" type="text" name="profesion">
+            <br>
+            <label for="edad">Edad</label>
+            <input id="edad" type="number" name="edad">
+            <br>
             <button type="button" onclick="enviarFormulario()" class="btn">Enviar</button>        
             
 
         </form>
         
-        <div>
+        <div id="respuestas" class="modal">
+            <h3> Datos Obtenidos </h3>
             <p id="respuestaNombre"> Nombre: </p>
             <p id="respuestaApellido"> Apellido: </p>
+            <p id="respuestaProfesion"> Profesion: </p>
+            <p id="respuestaedad"> Edad: </p>
+            <p id="respuestaMayor"> ¿Es Mayor o menor?: </p>
         </div>
 
     </main>

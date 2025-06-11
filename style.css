@@ -4,24 +4,25 @@
     box-sizing: border-box;
 }
 main{
-    height: 90vh;
-    background-color: #caf0f8;
+    height: 100vh;
+    background-color: #dff2f7;
     display: flex ;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%
-
+    gap: 3%;
 
 }
 
+h1, h3{
+    color: white;
+}
 form {
     margin: 30px 50px;
-    background-color: aquamarine;
+    background-color: rgb(3, 10, 23);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    height: 500px;
+    height: 600px;
     width: 500px;
     padding: 30px;
     gap: 20px;
@@ -31,24 +32,46 @@ input{
     padding: 3px;
     border-radius: 5px;
     border: none;
-    box-shadow: 4px 4px yellowgreen;
+    box-shadow: 4px 4px rgb(233, 7, 218);
     animation: 3s;
     color: gray;
     width: 90%;
+    height: 30px;
 }
 
 label{
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-bottom: -10px;
 
 }
 
+p{
+    color: white;
+}
 .btn{
     color: white;
     padding: 3px;
     width: 100px;
-    height: 30px;
+    height: 50px;
     border-radius: 7px;
     border: none;
     box-shadow: 3px 3px rgb(7, 7, 40);
-    background-color:yellowgreen ;
+    background-color:rgb(233, 7, 218) ;
 }
+
+
+
+.modal{
+    background-color: rgb(7, 7, 40) ;
+}
+
+.menor {
+    background-color: red;
+}
+
+#respuestas {
+    width: 300px;
+    border-radius: 20px;
+    padding: 6px 30px;
+}
+
