@@ -3,16 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    height: 100vh;
+
+.principal-box{
+    height: 90vh;
     background-color: #dff2f7;
     display: flex ;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 15%;
 
 }
-
+.principal-box .form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 h1, h3{
     color: white;
 }
@@ -25,7 +30,6 @@ form {
     height: 600px;
     width: 500px;
     padding: 30px;
-    gap: 20px;
 }
 
 input{
@@ -41,7 +45,7 @@ input{
 
 label{
     color: rgb(255, 255, 255);
-    margin-bottom: -10px;
+    
 
 }
 
@@ -52,21 +56,56 @@ p{
     color: white;
     padding: 3px;
     width: 100px;
-    height: 50px;
+    height: 30px;
     border-radius: 7px;
     border: none;
     box-shadow: 3px 3px rgb(7, 7, 40);
-    background-color:rgb(233, 7, 218) ;
+    background-color:rgb(233, 7, 218);
 }
 
-
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
 
 .modal{
-    background-color: rgb(7, 7, 40) ;
+    background-color: rgb(3, 10, 23) ;
 }
 
 .menor {
     background-color: red;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.other-mode  {
+    background-color: rgb(208, 50, 155);
+}
+
+.other-mode h1, .other-mode label {
+    color: black;
+}
+
+.other-mode input {
+    box-shadow: 3px 3px rgb(3, 10, 23) ;
+}
+
+.other-mode .btn{
+    background-color: rgb(20, 203, 7);
+    border: none;
+    box-shadow: 3px 3px rgb(3, 10, 23) ;
+}
+
+.respuesta-mode {
+    background-color: rgb(208, 50, 155);
+}
+
+.respuesta-mode h3, .respuesta-mode p{
+    color: black;
 }
 
 #respuestas {

@@ -9,25 +9,34 @@
 </head>
 
 <body>
-    <main>
+    <div class="principal-box" >
 
         <form action="">
-            <h1>Formulario</h1>
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="nombre">
+            <div class="form">
+                <h1>Formulario</h1>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="nombre">
+                <br>
+                <label for="surname">Apellido</label>
+                <input id="surname" type="text" name="apellido">
+                <br>
+                <label for="profesion">Profesion</label>
+                <input id="profesion" type="text" name="profesion">
+                <br>
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" name="edad">
+            </div>
             <br>
-            <label for="surname">Apellido</label>
-            <input id="surname" type="text" name="apellido">
-            <br>
-            <label for="profesion">Profesion</label>
-            <input id="profesion" type="text" name="profesion">
-            <br>
-            <label for="edad">Edad</label>
-            <input id="edad" type="number" name="edad">
-            <br>
-            <button type="button" onclick="enviarFormulario()" class="btn">Enviar</button>        
             
+            <div class="buttons">
 
+                <button type="button" onclick="enviarFormulario()" class="btn">Enviar</button>
+                <br> 
+                <button id="changecolorbtn" type="button" onclick="changeColor()" class="btn"> Change Color </button>
+                <a href="/inicio.html"> inicio </a>
+
+            </div>
+        
         </form>
         
         <div id="respuestas" class="modal">
@@ -39,7 +48,7 @@
             <p id="respuestaMayor"> ¿Es Mayor o menor?: </p>
         </div>
 
-    </main>
+    </div>
       
 </body>
 </html>

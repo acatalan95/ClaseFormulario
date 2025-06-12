@@ -1,7 +1,8 @@
 const nombre = document.getElementById("name");
 const appelido = document.getElementById("surname");
 const profesion = document.getElementById("profesion");
-const edad = document.getElementById("edad");
+const edad = document.getElementById("edad")
+
 
 const nombreResultado = document.getElementById("respuestaNombre")
 const apellidoResultado = document.getElementById("respuestaApellido")
@@ -19,17 +20,30 @@ function enviarFormulario(){
     profesionResultado.innerText = `Profesion: ${profesion.value}`
     edadResultado.innerText = `Edad : ${edad.value}`
 
-    if (parseInt(edad.value) < 18)  {
-        //alert("La persona es menor de edad");
+    if (nombre.value.trim() == "" || appelido.value.trim() == ""){
+        alert("Uno o varios campos estan vacios")
+    
+    } else {
+
+        if (parseInt(edad.value) < 18)  {
         mayorRespuesta.innerText = `¿es Mayor o menor?: La persona es menor de edad `;
         respuestasBox.classList.remove("modal")
         respuestasBox.classList.add("menor")
 
     } else {
-        //alert("La persona es mayor de edad");
         mayorRespuesta.innerText = `¿es Mayor o menor?: La persona es mayor de edad `;
         respuestasBox.classList.remove("menor")
         respuestasBox.classList.add("modal")
     }
+    }
+}
+
+const buttonChangeColor = document.getElementById("changecolorbtn");
+
+function changeColor() {
+    document.body.classList.toggle("dark-mode")
+    document.querySelector("form").classList.toggle("other-mode")
+    respuestasBox.classList.toggle("respuesta-mode")
+
 }
 
