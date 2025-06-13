@@ -97,7 +97,7 @@ p{
 .other-mode .btn{
     background-color: rgb(20, 203, 7);
     border: none;
-    box-shadow: 3px 3px rgb(3, 10, 23) ;
+    box-shadow: 3px 3px rgb(3, 10, 23);
 }
 
 .respuesta-mode {
@@ -112,5 +112,13 @@ p{
     width: 300px;
     border-radius: 20px;
     padding: 6px 30px;
+}
+
+button.btn:hover {
+    background-color: blue;
+}
+
+div.modal:active {
+    background-color: chocolate;
 }
 
